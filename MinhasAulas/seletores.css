@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/* em HTML é id = em css é # para identificar id
+   em HTML é class = em css é . 
+
+   id deve ser unico e exclusivo para o elemento 
+   Class pode ser usado por varios elementos
+   
+   pode misturar id + class
+   class+class
+
+   hierarquia
+   Generico (global) > class > id (preferencial sempre pro ultimo elemento)
+
+*/
+
+body{
+    background-color: antiquewhite;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+h1{
+    color: rgb(197, 168, 131);
+}
+h1#principal{
+    text-align: center;
+    background-color: rgb(53, 41, 26);
+    color: antiquewhite;
+}
+h2{
+    color: rgb(71, 52, 29);
+}
+.basico{
+    color: #883838;
+}
+.intermediario{
+    color: #886b38;
+}
+.avancado{
+    color: #3b8838;
+}

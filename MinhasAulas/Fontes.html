@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes</title>
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Bpmf+Huninn&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bpmf+Huninn&family=Sancreek&display=swap');
+        /*@import direto do site do google fonts, pegar novas fontes para o site sem fazer download
+        @font-face para importar uma fonte que fez download, url precisa ter o mesmo nome da fonte e format é o formato baixado
+        */
+        @font-face {
+            font-family: 'OldLondon';
+            src: url(OldLondon.ttf) format('TrueType'), url(Olondona.otf) format('OpenType');
+            font-weight: normal;
+            font-style: normal;
+            font-size: 2em;
+        }
+        /*Tipos de format()
+        - openType (otf)
+        - TrueType (ttf)
+        - embedded-openType
+        - trueType-aat (apple)
+        - svg
+        */
+
+        body{
+            /*
+            font-family:'Courier New', Courier, monospace;
+            font-weight: bold;
+            font-style: normal;
+            font-size: 1em;
+            
+            são a Shorthand font:
+            font-style -> font-weight -> font-size -> font-family (declara tudo na mesma linha com font: )
+            */
+            font: normal bold 1em 'Helvetica', courier, monospace
+            
+            /* Medidas absolutas:
+            cm,mm,in,px,pt,pc
+            
+            
+            Medidas Relativas:
+            em (relativa ao tamanho atual), ex (relativa ao tamanho x da fonte), rem (relativa a fonte do body), vw (largura da viewPort em porcentagem), vh (altura da viewport)
+            e %
+
+            mais usadas : px e em
+            16px geralmente é = 1em
+            */
+        }
+        h2{
+            font-family: "Sancreek", serif;
+        }
+        h3{
+            font-family: 'OldLondon';
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia labore,
+         iure numquam ut molestiae quod iusto, voluptatum assumenda ad aspernatur quam autem enim optio similique architecto ab? Rem, amet odit.
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus molestias in, molestiae voluptates deserunt quasi officia.
+        Corporis sunt magni, qui, eos delectus dignissimos doloribus aspernatur eaque quisquam blanditiis sequi ipsa!
+    </p>
+    <h2>KanadaJin</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, rem,
+         facilis voluptas ab voluptate laudantium voluptatibus tenetur nisi laborum modi officia quasi culpa libero provident, aliquam error. Ipsam, quod minima!
+    </p>
+    <h3>Old Londres Respira Novamente</h3>
+    
+    
+    
+</body>
+</html>

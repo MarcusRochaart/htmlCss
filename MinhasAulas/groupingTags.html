@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            background-image: linear-gradient(45deg ,red,blue);
+
+        }
+        header{
+            
+            background-color: aliceblue;
+            padding: 20px;
+            margin: 10px;
+        }
+        nav{
+            padding: 5px;
+            background-color: rgb(155, 155, 155);
+            box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.696);
+        }
+        nav > a {
+            text-decoration: none;
+            color: black;
+            margin-right: 30px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        } 
+        main{
+            background-color: rgb(232, 209, 181);
+            padding: 10px;
+            margin: 10px;
+        }
+        h2{
+            font-size: 2em;
+            color: blue;
+        }
+        article{
+            background-color: rgb(229, 152, 152);
+            padding: 5px;
+        }
+        article > aside {
+            background-color: blueviolet;
+            color: aliceblue;
+        }
+        footer{
+            background-color: gray;
+            color: white;
+            padding: 5px;
+            margin: 5px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<!--São tags semanticas que funcionam como Div, mas possuem uma melhor leitura-->
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h2>Autores contemporaneos</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur 
+                adipisicing elit. Magni eos tempora excepturi corrupti, et optio consequatur 
+                obcaecati in officia error. Facere aperiam sint
+                 culpa inventore, totam labore ipsum. Nostrum, vel.</p>
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Literatura Russa no sec.XVI</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Optio veniam hic nobis autem officia consequatur nihil soluta, 
+                    dolore itaque voluptates animi aspernatur 
+                    natus aliquam possimus a, sapiente illum. Quia, inventore.</p>
+                <aside>
+                    <p>Artigo periférico, autor Vladislav</p>
+                </aside>
+
+            </article>
+            <article>
+
+            </article>
+
+        </section>
+
+
+    </main>
+    <footer>
+        <p>Desenvolvido por Marcus Rocha</p>
+    </footer>
+
+</body>
+</html>

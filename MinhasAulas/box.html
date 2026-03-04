@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixas</title>
+    <!--
+        box = espaço do conteudo
+        border = a borda criada entorno 
+        padding = parte interna que pode ser ampliada entre o conteudo e a borda
+        margin - parte externa que pode ser ampliada
+        outline - linha criada em volta da border
+
+        box level = sempre se inicia na linha abaixo e ocupa o espaco inteiro do navegador
+        100% do viewport, e pula para a linha seguinte continuar o conteudo
+        ex: 
+        div é uma box-level
+        h1 - h6
+        p
+        main
+        header
+        nav
+        article
+        footer
+        form
+        video
+
+        inline level = não quebra a linha, ele ocupa o espaco dentro do conteudo
+        e depois não pula linha, ele continua o conteudo na mesma linha
+        ex:
+        span é uma inline-level
+        a
+        code
+        small
+        strong
+        em
+        sup - sub
+        label
+        button
+        input
+        select
+    -->
+    <style>
+        h1{
+            background-color: antiquewhite;
+            height: 60px;
+            width: 350px;
+
+            border-width: 5px;
+            border-style: solid;
+            border-color: rgb(91, 132, 132);
+            /* border: width => style => color */
+            
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            /* padding: top => right => bottom => left */
+
+            /*margin:auto para alinhar a box no meio*/
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 30px;
+            margin-left: 10px;
+            /*margin: top => right => bottom => left */
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+            /* outlin: width => style => color */
+            
+
+        }
+        a{
+            border-width: 5px;
+            border-style: dotted;
+            border-color: rgb(207, 91, 91);
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Box-Level</h1>
+    <p>Paragrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas 
+        inline-level</a>.
+       Vamos ver como tudo isso funciona. 
+    </p>
+    
+    
+</body>
+</html>
