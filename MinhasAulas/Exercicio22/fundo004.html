@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #container{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: relative; /**o posicionamento deve ser relativos para conseguir alinhar itens na vertical**/
+            height: 96vh;
+            background-color: rgb(119, 119, 119);
+            padding: 20px;
+        }
+        #conteudo{
+            background-size: 100% 100%;
+            position: absolute;/**para ter acesso as propriedades *left e *top e posicionar o item tanto vertical quanto horizontal**/
+            height: 200px;
+            width: 200px;
+            background-color: rgb(253, 166, 54);
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%)/**para encaixar certo a imagem do conteudo com o centro do fundo**/
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+    
+</body>
+</html>
