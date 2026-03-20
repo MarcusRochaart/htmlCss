@@ -1,12 +1,23 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One&display=swap');
+
 /** o * como propriedade global, é utilizado em todo o arquivo **/
 * {
     margin: 0px;
     padding: 0px;
 }
+
+:root {
+    --fonte1: Courier New, Courier, monospace;
+    --fonte2: "Passion One", sans-serif;
+    --fonte3: "Bebas Neue", sans-serif;
+}
+
 html, body {
     min-height: 100vh;
     background-color: antiquewhite;
+    font-family: var(--fonte1);
 }
 header{
     background-color: black;
@@ -16,6 +27,8 @@ header{
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps; /** deixa as fontes no maiusculo mas as primeiras letras ficam um pouco maiores**/
+    font-family: var(--fonte2);
+    font-size: 10vw;
 }
 header > p {
     padding-bottom: 50px;
@@ -35,6 +48,8 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3vw;
 }
 
 section.normal{
@@ -46,7 +61,8 @@ section.imagem{
     color: aliceblue;
 }
 section.imagem > p {
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.486);
 }
 footer {
